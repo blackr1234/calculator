@@ -1,0 +1,45 @@
+.calculator-button,
+.calculator-button-operator {
+	cursor: pointer;
+	font-weight: bold;
+	transition: 250ms;
+	user-select: none;
+}
+
+.calculator-button {
+	background-color: #eeeeee;
+}
+
+.calculator-button-operator {
+	color: white;
+	background-color: #ffa726;
+}
+
+@media (hover: hover) {
+	.calculator-button:hover {
+		background-color: #bdbdbd;
+	}
+
+	.calculator-button-operator:hover {
+		background-color: #e65100;
+	}
+
+	.calculator-button:hover:active,
+	.calculator-button-operator:hover:active {
+		opacity: 0.75;
+		transition: 0ms;
+		transform: scale(0.95);
+	}
+}
+
+@media (hover: none) {
+	.calculator-button:active:hover {
+		transition: 0ms;
+		background-color: #bdbdbd;
+	}
+
+	.calculator-button-operator:active:hover {
+		transition: 0ms;
+		background-color: #e65100;
+	}
+}
