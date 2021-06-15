@@ -10,9 +10,9 @@ function Calculator(props) {
 	useEffect(() => {
 		try {
 			// prettier-ignore
-			let newEquation = equation.replaceAll("−", "-")
-								      .replaceAll("×", "*")
-									  .replaceAll("÷", "/");
+			let newEquation = equation.replace(/−/g, "-")
+								      .replace(/×/g, "*")
+									  .replace(/÷/g, "/");
 
 			const openBracketCount = (equation.match(/\(/g) || []).length;
 			const closeBracketCount = (equation.match(/\)/g) || []).length;
