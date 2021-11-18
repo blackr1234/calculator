@@ -9,7 +9,7 @@
 		"react-scripts": "4.0.3"
 	},
 	"devDependencies": {
-		"gh-pages": "3.2.2"
+		"gh-pages": "3.2.3"
 	},
 	"homepage": "http://blackr1234.github.io/calculator",
 	"scripts": {
